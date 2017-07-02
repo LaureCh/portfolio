@@ -1,0 +1,21 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}AppBundle:Home:View{% endblock %}
+
+{% block body %}
+<div class=container><center><h1>Développeuse FullStack</h1></center></div>
+<div class="container-fluid">
+   <div class="row">
+    <div class="col-md-4">
+        <img src="{{ asset('portfolio/app/Resources/public/images/Profil.jpg') }}" class="img-circle">
+   
+    </div>
+    
+    
+    <div class="col-md-8">
+        Bienvenue !
+
+        Future diplômée d'un DUT Informatique, spécialisée en gestion de projets et développement Java, geek à mes heures perdues. Forte de 4 années d'expérience dans la gestion de projet, je suis actuellement en formation afin de renforcer mes compétences en développement logiciel et programmation. Après m'être spécialisée dans les questions d'archivistique, je suis maintenant à la recherche de nouveaux domaines dans lesquels m'investir.
+    </div>
+</div>
+{% endblock %}

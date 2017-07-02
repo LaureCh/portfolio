@@ -4,5 +4,4 @@ article:
     prefix:   /
 
 app:
-    resource: '@AppBundle/Controller/'
-    type: annotation
+    resource: '@AppBundle/Resources/config/routing.yml'
