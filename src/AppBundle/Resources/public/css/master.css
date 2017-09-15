@@ -1,0 +1,138 @@
+body {
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+}
+
+/*~~~~~~~~~~~~~~~ @font-face ~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~ général ~~~~~~~~~~~~~*/
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.title {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+/*~~~~~~~~~~~~~~~~~ homepage ~~~~~~~~~~~~~*/
+
+/*||||||||||||||||||| jumbotron ||||||||||||||||*/
+
+.navbar-inverse {
+  background-color: none!important;
+}
+
+nav .container-fluid {
+  width: 100%;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: darken;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+nav {
+}
+nav a {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+
+.jumbotron {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: darken;
+  background-size: cover;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.jumbotron .container-jumbotron {
+  padding: 15% 0 15% 0;
+  text-align: center;
+}
+
+/*||||||||||||||||| presentation |||||||||||||||||||||||*/
+
+.presentation .row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5% 0 5% 0;
+}
+
+
+.presentation .row .img {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+
+.presentation .row .img img {
+  width: 60%;
+  height: 60%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.presentation .row .texte {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+}
+
+/*~~~~~~~~~~~~~~~~~ compétences ~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~ formation ~~~~~~~~~~~~~*/
+
+.formation {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10% 0 10% 0;
+  flex-direction: column;
+}
+
+.container-carrousel {
+  margin-top: 5%;
+  width: 1000px;
+}
+
+.carousel-inner {
+
+  width: 100%;
+}
+
+.carousel-inner .item {
+    height: 500px;
+}
+
+
+
+
+
+/*~~~~~~~~~~~~~~~~~ contacts ~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~ articles ~~~~~~~~~~~~~*/

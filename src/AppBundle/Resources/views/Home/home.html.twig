@@ -1,21 +1,147 @@
-{% extends "::base.html.twig" %}
-
-{% block title %}AppBundle:Home:View{% endblock %}
-
-{% block body %}
-<div class=container><center><h1>Développeuse FullStack</h1></center></div>
+{% extends "::base.html.twig" %} {% block title %}AppBundle:Home:View{% endblock %} {% block body %}
+<!-- <div class=container><center><h1>Développeuse FullStack</h1></center></div>
 <div class="container-fluid">
    <div class="row">
     <div class="col-md-4">
         <img src="{{ asset('portfolio/app/Resources/public/images/Profil.jpg') }}" class="img-circle">
-   
+
     </div>
-    
-    
+
+
     <div class="col-md-8">
         Bienvenue !
 
         Future diplômée d'un DUT Informatique, spécialisée en gestion de projets et développement Java, geek à mes heures perdues. Forte de 4 années d'expérience dans la gestion de projet, je suis actuellement en formation afin de renforcer mes compétences en développement logiciel et programmation. Après m'être spécialisée dans les questions d'archivistique, je suis maintenant à la recherche de nouveaux domaines dans lesquels m'investir.
     </div>
+</div> -->
+{% image '@AppBundle/Resources/public/images/crieur-2000x1200.jpg' %}
+<section class="jumbotron" style="background-image: url({{ asset_url }})">
+  {% endimage %}
+  <div class="container-jumbotron">
+    <h1 class="animated fadeInLeft">Laure Christol</h1>
+    <h2 class="animated fadeInRight">blablablablabla</h2>
+  </div>
+</section>
+<div class="container">
+
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ présentation ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+  <section class="presentation">
+    <div class="title">
+      <h2>Mon Profil</h2>
+    </div>
+    <div class="row">
+      <div class="img">
+        {% image '@AppBundle/Resources/public/images/Profil.jpg' %}
+        <img src="{{ asset_url }}" alt="Profil.jpg"> {% endimage %}
+      </div>
+      <div class="texte">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~ formation ~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<section class="formation">
+  <div class="title" style="width:80%;margin:auto;">
+    <h2>Mes formations</h2>
+  </div>
+  <div class="container-carrousel">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          {% image '@AppBundle/Resources/public/images/formations/aubanel-1-e1484470143104.jpg' %}
+          <img src="{{ asset_url }}" alt="Los Angeles" style="width: 100%;" class="center-block"> {% endimage %}
+          <div class="carousel-caption" >
+  <h3>Los Angeles</h3>
+  <p>LA is always so much fun!</p>
+</div>
+        </div>
+
+        <div class="item">
+          {% image '@AppBundle/Resources/public/images/formations/sorbonne.jpg' %}
+          <img src="{{ asset_url }}" alt="Chicago" style="width: 100%;" class="center-block"> {% endimage %}
+          <div class="carousel-caption" >
+  <h3>Los Angeles</h3>
+  <p>LA is always so much fun!</p>
+</div>
+        </div>
+
+        <div class="item" style="margin:auto;width:100%">
+          {% image '@AppBundle/Resources/public/images/formations/iut_montp_sete_120.png' %}
+          <img src="{{ asset_url }}" alt="New York" class="width: 100%;" class="center-block" style="margin:auto;padding-top:180px;"> {% endimage %}
+          <div class="carousel-caption" >
+  <h3>Los Angeles</h3>
+  <p>LA is always so much fun!</p>
+</div>
+        </div>
+
+        <div class="item">
+          {% image '@AppBundle/Resources/public/images/formations/still_in_use__amphitheatre_of_nimes_by_syltorian-d87lpzw.jpg' %}
+          <img src="{{ asset_url }}" alt="New York" style="width: 100%;" class="center-block"> {% endimage %}
+          <div class="carousel-caption" >
+  <h3>Los Angeles</h3>
+  <p>LA is always so much fun!</p>
+</div>
+        </div>
+
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+    </div>
+  </div>
+</section>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~ compétences ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<div class="container">
+
+  <section class="competences">
+    <div class="row">
+      <div class="img">
+        <h3></h3>
+      </div>
+      <div class="content"></div>
+    </div>
+    <div class="row">
+      <div class="img">
+        <h3></h3>
+      </div>
+      <div class="content"></div>
+    </div>
+    <div class="row">
+      <div class="img">
+        <h3></h3>
+      </div>
+      <div class="content"></div>
+    </div>
+  </section>
+
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~ articles ~~~~~~~~~~~~~~~~~~~~ -->
+
+  <section class="articles">
+
+
+
+  </section>
 </div>
 {% endblock %}
