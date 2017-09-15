@@ -1,6 +1,6 @@
 _competences:
     path: /competences
-    defaults: 
+    defaults:
         _controller: AppBundle:Competences:View
 
 _formation:
@@ -15,5 +15,5 @@ _contact:
 
 _home:
     path: /home
-    defaults: 
+    defaults:
         _controller: AppBundle:Home:View

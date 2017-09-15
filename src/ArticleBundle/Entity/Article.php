@@ -130,4 +130,3 @@ class Article
         return $this->content;
     }
 }
-
