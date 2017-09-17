@@ -3,6 +3,7 @@ body {
   max-width: 100%;
   max-height: 100%;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 /*~~~~~~~~~~~~~~~ @font-face ~~~~~~~~~~~~~~*/
@@ -27,10 +28,69 @@ h2 {
 
 }
 
+.title h2 {
+  color: #a00601;
+}
+
 h3 {
 
 }
 
+/*scrollmagic*/
+
+
+.animate {
+	transition: all 0.5s ease;
+opacity: 0;
+}
+.zap {
+	opacity: 1;
+}
+
+.animate2 , .animate2-2, .animate2-3{
+	transition: all 0.5s ease;
+opacity: 0;
+left: 1000px;
+position: relative;
+}
+.zap2 {
+	opacity: 1;
+  left: 0;
+}
+
+.animate3, .animate3-1 {
+	transition: all 0.5s ease;
+opacity: 0;
+right: 1000px;
+position: relative;
+}
+.zap3 {
+	opacity: 1;
+  right: 0;
+}
+
+.animate-nav {
+  background-color: rgba(0, 0, 0, 0.4);
+background-blend-mode: darken;
+border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.zap-nav {
+  background-color: rgba(255,255,255,1);
+  background-blend-mode: normal;
+  transition: all 0.3s ease;
+border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.zap-nav a {
+  color: #222;
+}
+
+.zap-nav .navbar-brand {
+    color: #a00601;
+    transition: all 0.3s ease;
+}
 /*~~~~~~~~~~~~~~~~~ homepage ~~~~~~~~~~~~~*/
 
 /*||||||||||||||||||| jumbotron ||||||||||||||||*/
@@ -42,9 +102,9 @@ h3 {
 nav .container-fluid {
   width: 100%;
   margin: auto;
-  background-color: rgba(0, 0, 0, 0.4);
-  background-blend-mode: darken;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  /*background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: darken;*/
+
 }
 nav {
 }
@@ -104,8 +164,7 @@ nav a {
   font-size: 18px;
 }
 
-/*~~~~~~~~~~~~~~~~~ compétences ~~~~~~~~~~~~~*/
-/*~~~~~~~~~~~~~~~~~ formation ~~~~~~~~~~~~~*/
+/*||||||||||||||||| formation |||||||||||||||||||||||*/
 
 .formation {
   width: 100%;
@@ -130,6 +189,42 @@ nav a {
 .carousel-inner .item {
     height: 500px;
 }
+
+/*||||||||||||||||| compétences |||||||||||||||||||||||*/
+
+.competences .row {
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.competences {
+  margin-top: 10%;
+}
+
+.competences .row:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.competences .row .img , .competences .row .content {
+  width: 50%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.competences .row .img {
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: darken;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/*~~~~~~~~~~~~~~~~~ compétences ~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~ formation ~~~~~~~~~~~~~*/
+
 
 
 
