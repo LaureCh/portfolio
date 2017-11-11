@@ -223,6 +223,26 @@ nav a {
 }
 
 /*~~~~~~~~~~~~~~~~~ compétences ~~~~~~~~~~~~~*/
+
+.comp {
+  border-right: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.competence-page .row {
+  margin-top: 50px;
+}
+
+.competence-page .comp:nth-child(even){
+  background-color: rgba(0, 0, 0, 0.6);
+  color: rgba(255, 255, 255, 0.8);
+  
+}
+
+.competence-page .comp:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.4);
+  color: rgba(0, 0, 0, 0.8);
+}
+
 /*~~~~~~~~~~~~~~~~~ formation ~~~~~~~~~~~~~*/
 
 

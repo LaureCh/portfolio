@@ -1,4 +1,4 @@
-{% extends "::base.html.twig" %} {% block title %}AppBundle:Home:View{% endblock %} {% block body %}
+{% extends "::base.html.twig" %} {% block title %}{{parent()}} - Accueil{% endblock %} {% block body %}
 <!-- <div class=container><center><h1>Développeuse FullStack</h1></center></div>
 <div class="container-fluid">
    <div class="row">
@@ -122,7 +122,9 @@
 <div class="container">
   <section class="competences">
     <div class="row animate2">
-      <div class="img">
+      {% image '@AppBundle/Resources/public/images/Profil.jpg' %}
+      <div class="img" style="background-image:url({{ asset_url }});background-size:cover;">
+        {% endimage %}
         <h3>BACK - END</h3>
       </div>
         <div class="trigger3"></div>
