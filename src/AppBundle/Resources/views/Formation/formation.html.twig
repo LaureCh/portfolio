@@ -6,13 +6,17 @@
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~ compétences ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 <div class="title" style="width:80%;margin:auto;padding-top:100px;">
-  <h2>Compétences</h2>
+  <h2>Formation</h2>
 </div>
 <div class="container">
   <section class="competences">
     <div class="row animate2">
-      <div class="img">
+
+          {% image '@AppBundle/Resources/public/images/Profil.jpg' %}
+        <div class="img" style="background-image:url({{ asset_url }})" alt="Profil.jpg"> {% endimage %}
+
         <h3>BACK - END</h3>
+      </img>
       </div>
         <div class="trigger3"></div>
       <div class="content">

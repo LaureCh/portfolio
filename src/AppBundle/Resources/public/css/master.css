@@ -190,7 +190,17 @@ nav a {
     height: 500px;
 }
 
+.carousel-caption h3 {
+  text-shadow: 3px 2px 5px rgba(0,0,0,0.8);
+}
+
+.carousel-caption p {
+  text-shadow: 3px 2px 5px rgba(0,0,0,0.8);
+}
 /*||||||||||||||||| compétences |||||||||||||||||||||||*/
+svg {
+  width: 200px;
+}
 
 .competences .row {
   height: 500px;
@@ -217,7 +227,7 @@ nav a {
 }
 
 .competences .row .img {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: darken;
   color: rgba(255, 255, 255, 0.8);
 }

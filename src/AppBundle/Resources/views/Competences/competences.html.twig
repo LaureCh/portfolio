@@ -7,11 +7,13 @@
 <div class="container">
   <div class="competence-page">
 
-  {% image '@AppBundle/Resources/public/images/crieur-2000x1200.jpg' %}
-  <div class="row " style="background-image:url({{asset_url}})">
-      {% endimage %}
+
+
     <div class="comp col-md-3">
-      <img src="" alt="">
+        {% image '@AppBundle/Resources/public/images/crieur-2000x1200.jpg' %}
+        <div class="parallax-window" data-parallax="scroll" style="background-image: src(https://imagejournal.org/wp-content/uploads/bb-plugin/cache/23466317216_b99485ba14_o-panorama.jpg"></div>
+        {% endimage %}
+
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
     <div class="comp col-md-3">
@@ -91,9 +93,18 @@
   </div>
 </div>
 </section>
+</div>
+  <script type="text/javascript" src="{{ asset('AppBundle/Ressources/public/js/jquery.min.js') }}"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src={{ asset('AppBundle/Ressources/public/js/parallax.js') }}></script>
 
 </div>
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~ articles ~~~~~~~~~~~~~~~~~~~~ -->
 
-</div>
+    <style>
+        .parallax-window {
+            min-height: 400px;
+            background: transparent;
+        }
+    </style>
 {% endblock %}
+
